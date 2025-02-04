@@ -5,50 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
-    <header class="topHead">
-        <h1>Your To-Do List</h1>
-    </header>
-    <main class="mainArea">
-        <form action="" method="get"></form>
+    <div class="container-fluid">
+        <header class="topHead">
+            <h1>Your To-Do List</h1>
+        </header>
+        <main class="mainArea">
             <section class="basicStart">
                 <header class="defaultHead">
-                    <h2>Here are some starting goals for your to-do list:</h2>
+                    <h3>Here is your current to-do list:</h3>
                 </header>
-                <div id="defaultToDos">
-                    <label>
-                        <input type="checkbox" id="world-peace" name="world-peace"/>
-                        Create world peace
-                    </label>
-                    <br>
-                    <label>
-                        <input type="checkbox" id="universe-answers" name="universe-answers"/>
-                        Find the answers to the universe
-                    </label>
-                    <br>
-                    <label>
-                        <input type="checkbox" id="love-potion" name="love-potion"/>
-                        Create a love potion
-                    </label>
-                    <br>
+                <div id="currentToDos">
+                    <div class = "listItem">Create world peace<button class="x">x</button></div>
+                    <div class = "listItem">Find the answers to the universe<button class="x">x</button></div>
+                    <div class = "listItem">Create a love potion<button class="x">x</button></div>
                 </div>
-                <div id="addedToDos">
-                    
-                </div>
+                <br>
             </section>
             <section class="userInput">
                 <header class="userInputHeader">
-                    <h3>Now let's add some of your own goals!</h3>
+                    <h4>Want to add more items?</h4>
                 </header>
-                <label>
-                    Insert your to-do item here:
-                    <input type="text" name="to-dos" id="toDoInput"/>
-                    <button type="submit" id="submitter">Submit</button>
-                </label>
+                <form action="" method="get">
+                    <label>
+                        Insert your to-do item here:
+                        <input type="text" name="to-dos" id="toDoInput"/>
+                        <button type="submit" id="submitter">Submit</button>
+                    </label>
+                </form>
             </section>
-        </form>>
-    </main>
-    <script src="./index.js"></script>
+        </main>
+        <script src="./index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>    
+    </div>
 </body>
 </html>

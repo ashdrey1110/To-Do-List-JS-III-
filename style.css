@@ -1,3 +1,18 @@
 h1 {
-    color:blueviolet
+    color:blueviolet;
 }
+
+.container-fluid {
+    background-color: rgb(69, 6, 128);
+    color:aliceblue;
+}
+
+.striked {
+    text-decoration: line-through;
+}
+
+.topHead {
+    background-color: rgb(201, 179, 222);
+}
+
+
