@@ -1,0 +1,24 @@
+{
+  "name": "to-do-list-js-iii-",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashdrey1110/To-Do-List-JS-III-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashdrey1110/To-Do-List-JS-III-/issues"
+  },
+  "homepage": "https://github.com/ashdrey1110/To-Do-List-JS-III-#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  },
+  "description": ""
+}
