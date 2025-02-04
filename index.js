@@ -25,7 +25,9 @@ submitBtn.addEventListener("click", (event) => {
     //when btn pressed, info is loaded
     let newItem = document.createElement('div');
     newItem.className='listItem';
-    newItem.innerHTML = `${currentInput}<button class="x">x</button>`;
+    newItem.innerHTML = `
+    <div class='itemText'>${currentInput}</div>
+    <button class="x">x</button>`;
     todoItem.appendChild(newItem);
     listItems.push(currentInput);
     //clear variables
@@ -36,14 +38,11 @@ submitBtn.addEventListener("click", (event) => {
 
 todoItem.addEventListener("click", (event) => {
     //this will strikethrough an item when its clicked
-    if(event.target.className === 'listItem'){
-        event.target.className = 'striked';
-        //remove from array
-        let itemIndex = listItems.indexOf(event.target.textContent);
-        listItems.splice(itemIndex, 1);
+    if(event.target.classList.contains('itemText')){
+        event.target.classList.toggle('striked');
     }
-    if(event.target.className ==='striked'){
-        event.target.className = 'listItem';
+    if(event.target.classList.contains('striked')){
+        event.target.className.toggle('itemText');
         //add back to array
         listItems.push(event.target.textContent);
     }
