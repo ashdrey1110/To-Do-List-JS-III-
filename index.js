@@ -24,8 +24,8 @@ submitBtn.addEventListener("click", (event) => {
     event.preventDefault();
     //when btn pressed, info is loaded
     let newItem = document.createElement('div');
-    newItem.innerHTML = `${currentInput}<button class="x">x</button>`;
     newItem.className='listItem';
+    newItem.innerHTML = `${currentInput}<button class="x">x</button>`;
     todoItem.appendChild(newItem);
     listItems.push(currentInput);
     //clear variables
@@ -39,7 +39,7 @@ todoItem.addEventListener("click", (event) => {
     if(event.target.className === 'listItem'){
         event.target.className = 'striked';
         //remove from array
-        let itemIndex = listItems.indexOf(event.target.textContent.trim());
+        let itemIndex = listItems.indexOf(event.target.textContent);
         listItems.splice(itemIndex, 1);
     }
     if(event.target.className ==='striked'){
