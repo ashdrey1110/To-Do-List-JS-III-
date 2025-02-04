@@ -11,28 +11,43 @@
         <h1>Your To-Do List</h1>
     </header>
     <main class="mainArea">
-        <section class="basicStart">
-            <header class="defaultHead">
-                <h2>Here are some starting goals for your to-do list:</h2>
-            </header>
-
-            <ul class="defaultList">
-                <li class="defaultListItem">Create world peace</li>
-                <li class="defaultListItem">Find the answers to the universe</li>
-                <li class="defaultListItem">Create a love potion</li>
-            </ul>
-        </section>
-        <section class="userInput">
-            <header class="userInputHeader">
-                <h3>Now let's add some of your own goals!</h3>
-            </header>
-            <div class="userToDoInput">
+        <form action="" method="get"></form>
+            <section class="basicStart">
+                <header class="defaultHead">
+                    <h2>Here are some starting goals for your to-do list:</h2>
+                </header>
+                <div id="defaultToDos">
+                    <label>
+                        <input type="checkbox" id="world-peace" name="world-peace"/>
+                        Create world peace
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="universe-answers" name="universe-answers"/>
+                        Find the answers to the universe
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="love-potion" name="love-potion"/>
+                        Create a love potion
+                    </label>
+                    <br>
+                </div>
+                <div id="addedToDos">
+                    
+                </div>
+            </section>
+            <section class="userInput">
+                <header class="userInputHeader">
+                    <h3>Now let's add some of your own goals!</h3>
+                </header>
                 <label>
                     Insert your to-do item here:
-                    <input type="text" name="to-dos"/>
+                    <input type="text" name="to-dos" id="toDoInput"/>
+                    <button type="submit" id="submitter">Submit</button>
                 </label>
-            </div>>
-        </section>
+            </section>
+        </form>>
     </main>
     <script src="./index.js"></script>
 </body>
